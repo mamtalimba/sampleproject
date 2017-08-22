@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 username=et_username.getText().toString();
                 password=et_password.getText().toString();
+                Toast.makeText(MainActivity.this, "raman", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "mamta", Toast.LENGTH_SHORT).show();
             }
         });
 
