@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,23 +19,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_new_activity);
 
-        btn_login=(Button)findViewById(R.id.button);
-        btn_signup=(Button)findViewById(R.id.button2);
+        btn_login = (Button) findViewById(R.id.button);
+        btn_signup = (Button) findViewById(R.id.button2);
 
-        et_username=(EditText)findViewById(R.id.editText_username);
-        et_password=(EditText)findViewById(R.id.editText_password);
+        et_username = (EditText) findViewById(R.id.editText_username);
+        et_password = (EditText) findViewById(R.id.editText_password);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                username=et_username.getText().toString();
-                password=et_password.getText().toString();
+                username = et_username.getText().toString();
+                password = et_password.getText().toString();
+                Toast.makeText(MainActivity.this, "mamta", Toast.LENGTH_SHORT).show();
             }
         });
-        
+
 
     }
-
 
 
 }
