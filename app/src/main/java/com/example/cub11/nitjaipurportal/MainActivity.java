@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 username=et_username.getText().toString();
                 password=et_password.getText().toString();
                 Toast.makeText(MainActivity.this, "raman", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "mamta", Toast.LENGTH_SHORT).show();
             }
         });
         
