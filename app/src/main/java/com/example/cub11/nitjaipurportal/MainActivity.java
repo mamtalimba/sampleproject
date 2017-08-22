@@ -32,10 +32,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 username=et_username.getText().toString();
                 password=et_password.getText().toString();
+                tv.setText(username+password);
                 Toast.makeText(MainActivity.this, "raman", Toast.LENGTH_SHORT).show();
                 Toast.makeText(MainActivity.this, "mamta", Toast.LENGTH_SHORT).show();
-
-                tv.setText(username+password);
             }
         });
 
