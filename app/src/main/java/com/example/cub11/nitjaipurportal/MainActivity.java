@@ -31,8 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 password=et_password.getText().toString();
             }
         });
-
-        //commenting about ,.,mldfkltk
+        
 
     }
 
