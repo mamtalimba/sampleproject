@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_login, btn_signup;
     EditText et_username, et_password;
     String username, password;
+    TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         et_username=(EditText)findViewById(R.id.editText_username);
         et_password=(EditText)findViewById(R.id.editText_password);
+        tv=(TextView)findViewById(R.id.textView);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 password=et_password.getText().toString();
                 Toast.makeText(MainActivity.this, "raman", Toast.LENGTH_SHORT).show();
                 Toast.makeText(MainActivity.this, "mamta", Toast.LENGTH_SHORT).show();
+
+                tv.setText(username+password);
             }
         });
 
