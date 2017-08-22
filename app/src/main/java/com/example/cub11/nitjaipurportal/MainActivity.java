@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 username=et_username.getText().toString();
+                password=et_password.getText().toString();
             }
         });
 
